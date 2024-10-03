@@ -1,66 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Projeto Formulário Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este repositório contém o projeto de um sistema de cadastro de usuário desenvolvido com o framework Laravel, com foco no back-end. O projeto ainda está em desenvolvimento e inclui várias fases de construção, que serão detalhadas abaixo.
 
-## About Laravel
+## Objetivo do Projeto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+O objetivo deste projeto é criar um sistema funcional de cadastro de usuário que:
+- Coleta dados essenciais como nome, CPF, RG, data de expedição, senha e confirmação de senha.
+- Armazena essas informações em um banco de dados MySQL.
+- Valida os dados de entrada tanto no back-end quanto, futuramente, no front-end.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fases do Desenvolvimento
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Configuração Inicial (Concluída)
+- Instalação do Laravel e configuração do ambiente de desenvolvimento.
+- Conexão com o banco de dados MySQL via phpMyAdmin.
+- Criação das migrações para o banco de dados e dos modelos no Laravel.
+- Implementação das regras de validação no controlador para garantir a integridade dos dados inseridos.
 
-## Learning Laravel
+### 2. Validação e Cadastro de Usuário (Concluída)
+- Configuração do formulário de cadastro com validação de campos no back-end.
+- Testes realizados para garantir que os dados sejam armazenados corretamente no banco de dados.
+- Ajustes no modelo para permitir mass assignment e proteção de dados sensíveis.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 3. Front-end e Estilização (Em Progresso)
+- **Próximo passo**: Aplicar o front-end para melhorar a interface do usuário.
+    - Vou utilizar o CSS e frameworks como Bootstrap (ou Tailwind) para estilizar o formulário e garantir uma boa experiência de usuário.
+    - Planejo criar uma landing page, já desenhada no Figma, que será integrada com o sistema de cadastro. Esta página terá um layout responsivo e será o ponto de entrada principal para os usuários do sistema.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 4. Integração da Landing Page (Pendente)
+- A landing page foi criada no Figma e será implementada na fase final. Ela terá um design moderno, atraente e acessível.
+- O foco será em criar uma interface que se comunique bem com o back-end do Laravel e que ofereça uma experiência amigável ao usuário.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Tecnologias Utilizadas
 
-## Laravel Sponsors
+- **PHP** - Linguagem de programação usada para o desenvolvimento do back-end.
+- **Laravel** (versão 11) - Framework para construção do back-end e manipulação de dados.
+- **MySQL** - Banco de dados relacional usado para armazenar os cadastros de usuários.
+- **phpMyAdmin** - Ferramenta para gerenciar visualmente o banco de dados.
+- **HTML/CSS** - Será usado para criar o front-end do sistema.
+- **Figma** - Ferramenta de design usada para criar o layout da landing page e interface do usuário.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Como Rodar o Projeto
 
-### Premium Partners
+### Pré-requisitos
+Antes de iniciar, você precisará dos seguintes softwares instalados:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- [PHP](https://www.php.net/downloads)
+- [Composer](https://getcomposer.org/)
+- [MySQL](https://www.mysql.com/) ou [WAMP/XAMPP](https://www.apachefriends.org/index.html)
+- [Node.js](https://nodejs.org/) 
 
-## Contributing
+### Instruções
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/lzfael/FormularioEEPD.git
+2. Instale as dependências do projeto:
+    ```bash
+   composer install
 
-## Code of Conduct
+3. Configure o arquivo .env com suas credenciais de banco de dados e outras configurações necessárias.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. Execute as migrações:
+   ```bash
+    php artisan migrate
+5. Inicie o servidor:
+    ```bash
+    php artisan serve
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. Acesse o projeto em http://localhost:8000 e teste o formulário.
