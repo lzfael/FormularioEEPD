@@ -12,7 +12,7 @@ Este projeto é parte de um trabalho dado pelo professor Jesus Germano, com o ob
 ## Tecnologias Utilizadas
 
 - **PHP** - Linguagem de programação usada para o desenvolvimento do back-end.
-- **Laravel** (versão X.X) - Framework para construção do back-end e manipulação de dados.
+- **Laravel** (versão 11) - Framework para construção do back-end e manipulação de dados.
 - **MySQL** - Banco de dados relacional usado para armazenar os cadastros de usuários.
 - **phpMyAdmin** - Ferramenta para gerenciar visualmente o banco de dados.
 - **HTML/CSS** - Será usado para criar o front-end do sistema.
