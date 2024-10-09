@@ -2,12 +2,10 @@
 
 Este projeto é parte de um trabalho dado pelo professor Jesus Germano, com o objetivo de criar um sistema de cadastro de usuários usando Laravel e MySQL. O sistema permite coletar informações essenciais como nome, CPF, RG, data de expedição, senha e confirmação de senha, e armazená-las de forma segura em um banco de dados.
 
-## Fases do Desenvolvimento
+## Tarefas a Realizar
 
-- **Configuração Inicial**: Instalação do Laravel, configuração do banco de dados e criação das migrações.
-- **Validação e Cadastro**: Implementação do formulário de cadastro e validação dos dados com Laravel.
-- **Front-end e Estilização**: Aplicação de CSS para melhorar a interface do formulário e integração com uma landing page desenvolvida no Figma (em andamento).
-- **Próximos Passos**: Integração da landing page, melhorias na validação e testes de usabilidade.
+- **Validação com Regex**: Implementação de uma validação mais robusta, com regex em cada entrada de dados
+- **Funcionalidade de Conta**: Implementação de uma funcionalidade para a parte "Já possui uma conta?"
 
 ## Tecnologias Utilizadas
 
